@@ -9,10 +9,6 @@
 import UIKit
 import RxSwift
 
-struct Habit {
-    let title: String
-}
-
 class MainControler: UIViewController {
         
     let disposeBag = DisposeBag()
