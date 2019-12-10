@@ -19,6 +19,7 @@ class MainControler: UIViewController {
         let tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.backgroundColor = .systemBackground
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
@@ -37,6 +38,7 @@ class MainControler: UIViewController {
     func setupViews() {
         
         self.view.addSubview(tableView)
+        self.view.backgroundColor = .systemBackground
         
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),

@@ -56,6 +56,7 @@ class AddHabitController: UIViewController {
     
     func setupViews() {
         
+        view.backgroundColor = .systemBackground
         view.addSubview(titleTextField)
         
         NSLayoutConstraint.activate([
